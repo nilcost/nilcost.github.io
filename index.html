@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nilcost</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="header">
-    <b><h2>nilcost</h2></b>
-    <a href="index.html">Home</a>
-    <a href="mailto:info@nilcost.com">Contact</a>
-  </div>
+<script>
+  fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('headerContainer').innerHTML = html;
+  })
+;
+</script>
+
 
   <div class="content">
     <div class="text-container">
