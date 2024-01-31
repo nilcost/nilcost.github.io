@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nilcost</title>
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-  <div class="header">
-    <b><h2>nilcost</h2></b>
-    <a href="../index.html">Home</a>
-    <a href="mailto:info@nilcost.com">Contact</a>
-  </div>
-
-  <div class="content">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('../header2.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('headerContainer').innerHTML = html;
+    });
+    fetch('../footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footerContainer').innerHTML = html;
+    });
+  });
+</script>
+<div id='headerContainer'></div>
+   <div class="content">
     <div class="text-container">
       <i><p>Date: 31 / 1 / 2024</p></i>
       <p><b>Why BlackRock can not own the world</b></p>
@@ -23,9 +23,4 @@
       <p><a href="files/index.xlsx">index.xlsx</a></p>
     </div>
   </div>
-
-  <div class="footer">
-    &copy; nilcost 2024
-  </div>
-</body>
-</html>
+<div id='footerContainer'></div>
