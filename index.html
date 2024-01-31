@@ -7,22 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id='headerContainer'></div>
   <div class="content">
     <div class="text-container">
       <p><a href="blackrock/blackrock.html">Why BlackRock can not own the world</a> (1 / 31 / 2024)</p>
     </div>
   </div>
-<div id='footerContainer'></div>
-<script>
-  fetch('header.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('headerContainer').innerHTML = html;
-  });
-  fetch('footer.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('footerContainer').innerHTML = html;
-  });
-</script>
+  <div class="footer">
+      &copy; nilcost 2024
+  </div>
+</body>
+</html>
